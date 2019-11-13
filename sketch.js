@@ -3,7 +3,7 @@ let style
 let resultImg
 
 function setup(){
-  createCanvas(1920,1080).parent('canvasContainer')
+  createCanvas(800,600).parent('canvasContainer')
 
   video = createCapture(VIDEO);
   video.hide()
@@ -13,7 +13,7 @@ function setup(){
   style = ml5.styleTransfer('models/galaxia', video, modelLoaded) 
 }
 function draw(){
-  image(resultImg,0, 0, 1920, 1080)
+  image(resultImg,0, 0, 800, 600)
 }
 function modelLoaded(){
   select('#status').html('Model Loaded')
