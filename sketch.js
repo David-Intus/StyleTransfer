@@ -10,7 +10,7 @@ function setup(){
   resultImg = createImg('')
   resultImg.hide()
 
-  style = ml5.styleTransfer('models/pantone', video, modelLoaded) 
+  style = ml5.styleTransfer('models/galaxia', video, modelLoaded) 
 }
 function draw(){
   image(resultImg,0, 0, 1920, 1080)
